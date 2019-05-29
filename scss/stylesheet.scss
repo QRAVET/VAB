@@ -148,7 +148,8 @@ a, a:hover, a:focus{
     top:0; 
     bottom:0; 
     width:100%;
-    display: none;
+    // display: none;
+    opacity: 0;
 }
 
 .mapboxgl-popup {
