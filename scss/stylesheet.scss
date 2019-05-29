@@ -1,0 +1,157 @@
+/***** COLORS *****/
+$light-green:#5df2d6;
+$med-green:#00bfa5;
+$dark-green:#008e76;
+$light-pink:#ff616f;
+$med-pink:#ff1744;
+$dark-pink:#c4001d;
+$yellow-vab:#fdd835;
+$dark-blue:#1a1423;
+$light-grey:#ecede2;
+$med-grey:#9e9e9d;
+
+.lgreen {
+  color: $light-green
+}
+.mgreen {
+  color: $med-green
+}
+.dgreen {
+  color: $dark-green
+}
+.lpink {
+  color: $light-pink
+}
+.mpink {
+  color: $med-pink
+}
+.dpink {
+  color: $dark-pink
+}
+.dblue {
+  color: $dark-blue
+}
+.yellow-vab {
+  color: $yellow-vab
+}
+.lgrey {
+  color: $light-grey
+}
+.mgrey {
+  color: $med-grey
+}
+/***** END COLORS *****/
+
+
+body { margin:0; padding:0;font-family: 'Overpass';color: $dark-blue;}
+
+p { font-weight: 300}
+
+button {border: none}
+
+a, a:hover, a:focus{
+  text-decoration: none;
+}
+
+.screen {
+  height: 100vh;
+}
+
+/***** BACKGROUND *****/
+.bg-lgreen {
+  background-color: $light-green
+}
+.bg-mgreen {
+  background-color: $med-green
+}
+.bg-dgreen {
+  background-color: $dark-green
+}
+.bg-lpink {
+  background-color: $light-pink
+}
+.bg-mpink {
+  background-color: $med-pink
+}
+.bg-dpink {
+  background-color: $dark-pink
+}
+.bg-dblue {
+  background-color: $dark-blue
+}
+.bg-yellow-vab {
+  background-color: $yellow-vab
+}
+.bg-mgrey {
+  background-color: $med-grey
+}
+/***** END BACKGROUND *****/
+
+/***** LOGO VAB *****/
+
+.logo-vab-xl {
+  height: 200px;
+  width: 200px;
+  margin: 80px auto 30px auto;
+  background: url(../img/logo-vab.svg) no-repeat;
+  background-size: cover;
+}
+.logo-vab-md {
+  height: 120px;
+  width: 120px;
+  margin: 10% auto;
+  background: url(../img/logo-vab.svg) no-repeat;
+  background-size: cover;
+}
+.logo-vab-sm {
+  height: 70px;
+  width: 70px;
+  margin: 2% auto;
+  background: url(../img/logo-vab.svg) no-repeat;
+  background-size: cover;
+}
+/***** END LOGO *****/
+
+/***** BUTTON *****/
+
+.sm-btn {
+  font-size: 10pt;
+  font-weight: bold;
+  border-radius: 50px;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.lg-btn {
+  font-size: 18pt;
+  font-weight: bold;  
+  border-radius: 50px;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin: 50px 0 50px 0
+}
+/***** END BUTTON *****/
+
+/***** INPUT *****/
+
+.input-w {
+  color: $light-grey
+}
+/***** END INPUT *****/
+
+
+/***** MAP *****/
+#map { 
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    width:100%;
+    display: none;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+  }
+/***** END INPUT *****/

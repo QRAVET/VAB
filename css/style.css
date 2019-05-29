@@ -1,0 +1,172 @@
+/***** COLORS *****/
+.lgreen {
+  color: #5df2d6;
+}
+
+.mgreen {
+  color: #00bfa5;
+}
+
+.dgreen {
+  color: #008e76;
+}
+
+.lpink {
+  color: #ff616f;
+}
+
+.mpink {
+  color: #ff1744;
+}
+
+.dpink {
+  color: #c4001d;
+}
+
+.dblue {
+  color: #1a1423;
+}
+
+.yellow-vab {
+  color: #fdd835;
+}
+
+.lgrey {
+  color: #ecede2;
+}
+
+.mgrey {
+  color: #9e9e9d;
+}
+
+/***** END COLORS *****/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass";
+  color: #1a1423;
+}
+
+p {
+  font-weight: 300;
+}
+
+button {
+  border: none;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+.screen {
+  height: 100vh;
+}
+
+/***** BACKGROUND *****/
+.bg-lgreen {
+  background-color: #5df2d6;
+}
+
+.bg-mgreen {
+  background-color: #00bfa5;
+}
+
+.bg-dgreen {
+  background-color: #008e76;
+}
+
+.bg-lpink {
+  background-color: #ff616f;
+}
+
+.bg-mpink {
+  background-color: #ff1744;
+}
+
+.bg-dpink {
+  background-color: #c4001d;
+}
+
+.bg-dblue {
+  background-color: #1a1423;
+}
+
+.bg-yellow-vab {
+  background-color: #fdd835;
+}
+
+.bg-mgrey {
+  background-color: #9e9e9d;
+}
+
+/***** END BACKGROUND *****/
+/***** LOGO VAB *****/
+.logo-vab-xl {
+  height: 200px;
+  width: 200px;
+  margin: 80px auto 30px auto;
+  background: url(../img/logo-vab.svg) no-repeat;
+  background-size: cover;
+}
+
+.logo-vab-md {
+  height: 120px;
+  width: 120px;
+  margin: 10% auto;
+  background: url(../img/logo-vab.svg) no-repeat;
+  background-size: cover;
+}
+
+.logo-vab-sm {
+  height: 70px;
+  width: 70px;
+  margin: 2% auto;
+  background: url(../img/logo-vab.svg) no-repeat;
+  background-size: cover;
+}
+
+/***** END LOGO *****/
+/***** BUTTON *****/
+.sm-btn {
+  font-size: 10pt;
+  font-weight: bold;
+  border-radius: 50px;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.lg-btn {
+  font-size: 18pt;
+  font-weight: bold;
+  border-radius: 50px;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin: 50px 0 50px 0;
+}
+
+/***** END BUTTON *****/
+/***** INPUT *****/
+.input-w {
+  color: #ecede2;
+}
+
+/***** END INPUT *****/
+/***** MAP *****/
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+/***** END INPUT *****/
+
+/*# sourceMappingURL=style.css.map */
