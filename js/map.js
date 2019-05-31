@@ -99,5 +99,5 @@ $( ".loader" ).fadeOut( "slow", function() {
     $("#map").fadeTo( "slow" , 1, function() {
         // Animation complete.
     });
-});}, 3500);
+});}, 4500);
 initMap();
