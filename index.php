@@ -7,7 +7,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 bg-dpink fixed-top">
+            <div class="subheader col-12 bg-dpink fixed-top">
                 <span>Orange</span>
             </div>
         </div>

@@ -40,6 +40,7 @@
 }
 
 /***** END COLORS *****/
+/***** CUSTOM *****/
 body {
   margin: 0;
   padding: 0;
@@ -59,6 +60,29 @@ a, a:hover, a:focus {
   text-decoration: none !important;
 }
 
+h1 {
+  color: #008e76;
+  font-size: 25pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 3% 0;
+  margin: 0px 0px 30px 0;
+}
+
+h2 {
+  color: #1a1423;
+  font-size: 18pt;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0;
+  margin: 0px 0px 30px 0;
+}
+
+.box-app {
+  height: 100%;
+  padding: 160px 8% 0 8%;
+}
+
 .screen {
   height: 100vh;
 }
@@ -68,6 +92,7 @@ a, a:hover, a:focus {
   margin-bottom: auto;
 }
 
+/***** END CUSTOM *****/
 /***** BACKGROUND *****/
 .bg-lgreen {
   background-color: #5df2d6;
@@ -126,7 +151,7 @@ a, a:hover, a:focus {
 .logo-vab-sm {
   height: 70px;
   width: 70px;
-  margin: 10% auto;
+  margin: auto;
   background: url(../img/logo-vab.svg) no-repeat;
   background-size: cover;
 }
@@ -178,15 +203,21 @@ header a:hover {
   color: #ecede2;
 }
 
-header:last-child {
-  height: 140px;
+header {
+  height: 100px;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+.subheader {
+  height: 30px;
+}
+
 a i {
   font-size: 35pt;
 }
+
+/***** END HEADER *****/
 
 /*# sourceMappingURL=style.css.map */
