@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Document</title>
+    <title>Inscription</title>
     <?php include 'include/header.php'; ?>
 </head>
 <body>

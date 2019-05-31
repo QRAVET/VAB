@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Document</title>
+    <title>Accueil</title>
     <?php include 'include/header.php'; ?>
 </head>
 <body>
@@ -16,9 +16,9 @@
         <div class="row">
             <div class="col-12 d-flex flex-column">
                 <div class="logo-vab-xl"></div>
-                <p class="text-uppercase text-center font-weight-bold">véhicule autonome bordelais</p>
+                <p class="text-uppercase text-center font-weight-bolder">véhicule autonome bordelais</p>
                 <p class="text-center text-white">un moyen de transport <b>éco-responsable, rapide et durable</b> pour la métropole bordelaise</p>
-                <button type="button" class="text-uppercase lg-btn bg-white mpink ">faire un tour rapide</button>
+                <button type="button" class="text-uppercase lg-btn bg-white mpink" onclick="location.href='onboarding'">faire un tour rapide</button>
                 <div class="col">
                     <div class="row">
                         <button type="button" class="col-5 mr-auto text-uppercase sm-btn bg-lgreen dblue" onclick="location.href='register'">inscription</button>
