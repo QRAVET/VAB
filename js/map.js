@@ -4,39 +4,39 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicXVlbnRpbnJhdmV0IiwiYSI6ImNqdWxmYmY5bjBkejg0M
 var marker = [
     {
         name: "station 1",
-        position: [-0.525462, 44.858883],
-        id: 1,
-        nbrPlace : 8
-    },
-    {
-        name: "station 2",
         position: [-0.574153, 44.873464],
         id: 3,
         nbrPlace : 12
     },
     {
-        name: "station 3",
+        name: "station 2",
         position: [-0.621494, 44.858555],
         id: 3,
         nbrPlace : 12
     },
     {
-        name: "station 4",
+        name: "station 3",
         position: [-0.620462, 44.816451],
         id: 4,
         nbrPlace : 32
     },
     {
-        name: "station 5",
+        name: "station 4",
         position: [-0.562572 , 44.80803],
         id: 5,
         nbrPlace : 1
     },
     {
-        name: "station 6",
+        name: "station 5",
         position: [-0.527192, 44.833184],
         id: 6,
         nbrPlace : 28
+    },
+    {
+        name: "station 6",
+        position: [-0.525462, 44.858883],
+        id: 1,
+        nbrPlace : 8
     },
     {
         name: "station 7",
@@ -80,7 +80,7 @@ map.on('load', function () {
             },
         'layout': {},
         'paint': {
-            'fill-color': '#088',
+            'fill-color': '#5df2d6',
             'fill-opacity': 0.8
         }
     });
@@ -116,8 +116,8 @@ map.on('load', function () {
             },
         'layout': {},
         'paint': {
-            'fill-color': '#088',
-            'fill-opacity': 0.6
+            'fill-color': '#2fa18b',
+            'fill-opacity': 0.8
         }
     });
 
@@ -158,8 +158,8 @@ map.on('load', function () {
             },
         'layout': {},
         'paint': {
-            'fill-color': '#088',
-            'fill-opacity': 0.4
+            'fill-color': '#00352b',
+            'fill-opacity': 0.8
         }
     });
 
@@ -193,8 +193,8 @@ map.on('load', function () {
             },
         'layout': {},
         'paint': {
-            'fill-color': '#088',
-            'fill-opacity': 0.2
+            'fill-color': '#5df2d6',
+            'fill-opacity': 0.8
         }
     });
 
@@ -238,8 +238,8 @@ map.on('load', function () {
             },
         'layout': {},
         'paint': {
-            'fill-color': '#ff1744',
-            'fill-opacity': 0.6
+            'fill-color': '#2fa18b',
+            'fill-opacity': 0.8
         }
     });
 
@@ -278,8 +278,8 @@ map.on('load', function () {
             },
         'layout': {},
         'paint': {
-            'fill-color': '#ff1744',
-            'fill-opacity': 0.4
+            'fill-color': '#00352b',
+            'fill-opacity': 0.8
         }
     });
 
@@ -307,7 +307,7 @@ map.on('load', function () {
             },
         'layout': {},
         'paint': {
-            'fill-color': '#ff1744',
+            'fill-color': '#291e3a',
             'fill-opacity': 0.8
         }
     });
