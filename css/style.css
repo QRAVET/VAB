@@ -56,7 +56,9 @@ button {
   border: none;
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
   text-decoration: none !important;
 }
 
@@ -84,12 +86,21 @@ h2 {
 }
 
 .screen {
+  padding-top: 30px;
+  padding-bottom: 30px;
   height: 100vh;
 }
 
 .align-mid {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /***** END CUSTOM *****/
@@ -135,15 +146,15 @@ h2 {
 .logo-vab-xl {
   height: 200px;
   width: 200px;
-  margin: 80px auto 30px auto;
+  margin: 30px auto;
   background: url(../img/logo-vab.svg) no-repeat;
   background-size: cover;
 }
 
 .logo-vab-md {
-  height: 120px;
-  width: 120px;
-  margin: 10% auto;
+  height: 130px;
+  width: 130px;
+  margin: 30px auto;
   background: url(../img/logo-vab.svg) no-repeat;
   background-size: cover;
 }
@@ -159,28 +170,57 @@ h2 {
 /***** END LOGO *****/
 /***** BUTTON *****/
 .sm-btn {
+  cursor: pointer;
   font-size: 10pt;
   font-weight: bold;
   border-radius: 50px;
-  padding-top: 5%;
-  padding-bottom: 4%;
+  padding: 15px 25px 12px 25px;
   margin-top: auto;
   margin-bottom: 15px;
 }
 
 .lg-btn {
+  cursor: pointer;
   font-size: 18pt;
   font-weight: bold;
   border-radius: 50px;
-  padding-top: 7%;
-  padding-bottom: 5%;
+  padding: 20px 30px 15px 30px;
+  margin: 15px 0;
+}
+
+.mg-btn {
   margin: 50px 0 50px 0;
 }
 
 /***** END BUTTON *****/
 /***** INPUT *****/
+input:focus, a:focus, button:focus {
+  outline-style: none;
+}
+
 .input-w {
   color: #ecede2;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ecede2;
+  color: #9e9e9d;
+}
+.form-group .fas {
+  font-size: 24px;
+  color: #008e76;
+  margin-right: 15px;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  height: 48px;
 }
 
 /***** END INPUT *****/
@@ -199,19 +239,26 @@ h2 {
 
 /***** END INPUT *****/
 /***** HEADER *****/
-header a:hover {
+.header a:hover {
   color: #ecede2;
 }
 
-header {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.75);
 }
 
 .subheader {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   height: 30px;
+  padding: 0 15px;
 }
 
 a i {
@@ -220,6 +267,10 @@ a i {
 
 /***** END HEADER *****/
 /***** ONBARDING *****/
+.text-index {
+  padding: 0 20px;
+}
+
 .bloc {
   padding: 10px;
   overflow: hidden;
@@ -247,8 +298,6 @@ ul {
 
 li {
   display: inline;
-  width: 30px;
-  height: 30px;
 }
 
 li.active {
@@ -257,5 +306,28 @@ li.active {
 }
 
 /***** END ONBOARDING *****/
+/***** LOGIN *****/
+.separator {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-text {
+  font-size: 14px;
+}
+
+.no-account {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/***** END LOGIN *****/
 
 /*# sourceMappingURL=style.css.map */

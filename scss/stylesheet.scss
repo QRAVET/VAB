@@ -1,55 +1,66 @@
 /***** COLORS *****/
-$light-green:#5df2d6;
-$med-green:#00bfa5;
-$dark-green:#008e76;
-$light-pink:#ff616f;
-$med-pink:#ff1744;
-$dark-pink:#c4001d;
-$yellow-vab:#fdd835;
-$dark-blue:#1a1423;
-$light-grey:#ecede2;
-$med-grey:#9e9e9d;
+$light-green: #5df2d6;
+$med-green: #00bfa5;
+$dark-green: #008e76;
+$light-pink: #ff616f;
+$med-pink: #ff1744;
+$dark-pink: #c4001d;
+$yellow-vab: #fdd835;
+$dark-blue: #1a1423;
+$light-grey: #ecede2;
+$med-grey: #9e9e9d;
 
 .lgreen {
-  color: $light-green
+  color: $light-green;
 }
 .mgreen {
-  color: $med-green
+  color: $med-green;
 }
 .dgreen {
-  color: $dark-green
+  color: $dark-green;
 }
 .lpink {
-  color: $light-pink
+  color: $light-pink;
 }
 .mpink {
-  color: $med-pink
+  color: $med-pink;
 }
 .dpink {
-  color: $dark-pink
+  color: $dark-pink;
 }
 .dblue {
-  color: $dark-blue
+  color: $dark-blue;
 }
 .yellow-vab {
-  color: $yellow-vab
+  color: $yellow-vab;
 }
 .lgrey {
-  color: $light-grey
+  color: $light-grey;
 }
 .mgrey {
-  color: $med-grey
+  color: $med-grey;
 }
 /***** END COLORS *****/
 
 /***** CUSTOM *****/
-body { margin:0; padding:0;font-family: 'Overpass';color: $dark-blue;}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass";
+  color: $dark-blue;
+}
 
-p { font-weight: 300}
+p {
+  font-weight: 300;
+}
 
-button {border: none}
+button {
+  border: none;
+}
 
-a, a:hover, a:focus{
+a,
+a:hover,
+a:focus {
   text-decoration: none !important;
 }
 
@@ -77,43 +88,53 @@ h2 {
 }
 
 .screen {
+  padding-top: 30px;
+  padding-bottom: 30px;
   height: 100vh;
 }
 
 .align-mid {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /***** END CUSTOM *****/
 
 /***** BACKGROUND *****/
 
 .bg-lgreen {
-  background-color: $light-green
+  background-color: $light-green;
 }
 .bg-mgreen {
-  background-color: $med-green
+  background-color: $med-green;
 }
 .bg-dgreen {
-  background-color: $dark-green
+  background-color: $dark-green;
 }
 .bg-lpink {
-  background-color: $light-pink
+  background-color: $light-pink;
 }
 .bg-mpink {
-  background-color: $med-pink
+  background-color: $med-pink;
 }
 .bg-dpink {
-  background-color: $dark-pink
+  background-color: $dark-pink;
 }
 .bg-dblue {
-  background-color: $dark-blue
+  background-color: $dark-blue;
 }
 .bg-yellow-vab {
-  background-color: $yellow-vab
+  background-color: $yellow-vab;
 }
 .bg-mgrey {
-  background-color: $med-grey
+  background-color: $med-grey;
 }
 /***** END BACKGROUND *****/
 
@@ -122,14 +143,14 @@ h2 {
 .logo-vab-xl {
   height: 200px;
   width: 200px;
-  margin: 80px auto 30px auto;
+  margin: 30px auto;
   background: url(../img/logo-vab.svg) no-repeat;
   background-size: cover;
 }
 .logo-vab-md {
-  height: 120px;
-  width: 120px;
-  margin: 10% auto;
+  height: 130px;
+  width: 130px;
+  margin: 30px auto;
   background: url(../img/logo-vab.svg) no-repeat;
   background-size: cover;
 }
@@ -145,63 +166,102 @@ h2 {
 /***** BUTTON *****/
 
 .sm-btn {
+  cursor: pointer;
   font-size: 10pt;
   font-weight: bold;
   border-radius: 50px;
-  padding-top: 5%;
-  padding-bottom: 4%;
+  padding: 15px 25px 12px 25px;
   margin-top: auto;
   margin-bottom: 15px;
 }
 
 .lg-btn {
+  cursor: pointer;
   font-size: 18pt;
-  font-weight: bold;  
+  font-weight: bold;
   border-radius: 50px;
-  padding-top: 7%;
-  padding-bottom: 5%;
-  margin: 50px 0 50px 0
+  padding: 20px 30px 15px 30px;
+  margin: 15px 0;
 }
+
+.mg-btn {
+  margin: 50px 0 50px 0;
+}
+
 /***** END BUTTON *****/
 
 /***** INPUT *****/
 
-.input-w {
-  color: $light-grey
+input:focus, a:focus, button:focus {
+  outline-style: none;
 }
+
+.input-w {
+  color: $light-grey;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $light-grey;
+  color: $med-grey;
+
+  .fas {
+    font-size: 24px;
+    color: $dark-green;
+    margin-right: 15px;
+  }
+
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  height: 48px;
+}
+
 /***** END INPUT *****/
 
-
 /***** MAP *****/
-#map { 
-    position:absolute; 
-    top:0; 
-    bottom:0; 
-    width:100%;
-    // display: none;
-    opacity: 0;
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  // display: none;
+  opacity: 0;
 }
 
 .mapboxgl-popup {
   max-width: 200px;
-  }
+}
 /***** END INPUT *****/
 
 /***** HEADER *****/
 
-header a:hover {
+.header a:hover {
   color: $light-grey;
 }
 
-header{
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.75);
 }
 
-.subheader{
+.subheader {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   height: 30px;
+  padding: 0 15px;
 }
 
 a i {
@@ -212,38 +272,68 @@ a i {
 
 /***** ONBARDING *****/
 
-.bloc{
+.text-index {
+  padding: 0 20px;
+}
+
+.bloc {
   padding: 10px;
   overflow: hidden;
   position: absolute;
   left: -9999px;
   top: 0;
-  transition: left .5s ease;
+  transition: left 0.5s ease;
   margin: 0 auto;
   width: 100%;
   right: 0;
 }
-.bloc.active{
+
+.bloc.active {
   left: 0;
   display: block;
 }
 
-ul{
+ul {
   list-style: none;
   text-align: center;
   padding: 0;
   font-size: 10rem;
   height: 40px;
 }
-li{
+
+li {
   display: inline;
-  width: 30px;
-  height: 30px;
 }
 
-li.active{
+li.active {
   border: black;
   border-width: 2px;
 }
 
 /***** END ONBOARDING *****/
+
+
+/***** LOGIN *****/
+
+.separator {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-text {
+  font-size: 14px;
+}
+
+.no-account {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/***** END LOGIN *****/

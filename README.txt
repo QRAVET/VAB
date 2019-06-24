@@ -1,0 +1,1 @@
+sass --watch scss/stylesheet.scss:css/style.css scss/loader.scss:css/loader.css

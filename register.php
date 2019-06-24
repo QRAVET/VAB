@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <title>Inscription</title>
-    <?php include 'include/header.php'; ?>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="subheader col-12 bg-dgreen fixed-top">
-                <span>Orange</span>
-            </div>
-        </div>
-    </div>
+    <head>
+        <title>Inscription</title>
+        <?php include 'include/header.php';?>
+    </head>
+    <body>
 
-    <section id="register">
-            <h2>Inscription</h2>
-        <form id="formSignin">
-            <p>Saisissez votre pseudo : </p><input type="text" name="pseudo"><br>
-            <p>Saisissez votre mot de passe : </p><input type="password" name="password"><br><br>
-            <p>Confirmer votre mot de passe : </p><input type="password" name="confirm_password"><br><br>
-            <input  type="submit" value="inscription">            
-        </form>
-        <button onclick="location.href='login'">Connexion</button>
-    </section>    
-</body>
-<?php include 'include/script.php'; ?>
+        <div class="subheader bg-dgreen fixed-top">
+            <span>Orange</span>
+        </div>
+
+        <div class="container-fluid screen">
+            <div class="logo-vab-md"></div>
+
+            <section id="register">
+                <form id="formSignin">
+                    <div class="col-12 form-group">
+                        <input class="input" type="text" name="pseudo" placeholder="Choisir mon identifiant">
+                    </div>
+                    <div class="col-12 form-group">
+                        <input class="input" type="email" name="email" placeholder="Saisir mon adresses email">
+                    </div>
+                    <div class="col-12 form-group">
+                        <input class="input" type="password" name="password" placeholder="Choisir mon mot de passe">
+                    </div>
+                    <div class="col-12 form-group">
+                        <input class="input" type="password" name="confirm_password" placeholder="Confirmer mon mot de passe">
+                    </div>
+                    <div>
+                        <input type="checkbox"><span class="sub-text">Je souhaite m’abonner à la newsletter mensuelle.</span>
+                    </div>
+                    <div class="align-mid">
+                        <button type="submit" value="login" class="mr-auto mg-auto text-uppercase lg-btn bg-lgreen dblue">Inscription</button>
+                    </div>
+                </form>
+                <div class="align-mid">
+                    <button class="col-5 text-uppercase sm-btn bg-mpink text-white" onclick="location.href='login'">Retour</button>
+                </div>
+            </section>
+        </div>
+
+        <?php include 'include/script.php';?>
+    </body>
 </html>
