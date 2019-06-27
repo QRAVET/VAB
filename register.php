@@ -28,7 +28,13 @@
                         <input class="input" type="password" name="confirm_password" placeholder="Confirmer mon mot de passe">
                     </div>
                     <div>
-                        <input type="checkbox"><span class="sub-text">Je souhaite m’abonner à la newsletter mensuelle.</span>
+                        <input class="inp-cbx" id="cbx" type="checkbox" style="display: none;"/>
+                        <label class="cbx flex-center" for="cbx">
+                            <span>
+                                <svg width="12px" height="10px" viewbox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
+                            </span>
+                            <span>Je souhaite m’abonner à la newsletter mensuelle.</span>
+                        </label>
                     </div>
                     <div class="align-mid">
                         <button type="submit" class="mr-auto mg-auto text-uppercase lg-btn bg-lgreen dblue">Inscription</button>

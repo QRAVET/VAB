@@ -61,6 +61,7 @@ a,
 a:hover,
 a:focus {
   text-decoration: none !important;
+  color: #1a1423;
 }
 
 h1 {
@@ -95,6 +96,17 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /***** END CUSTOM *****/
@@ -230,12 +242,15 @@ textarea.input {
   padding: 10px 5px;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   outline: none;
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent;
 }
 
@@ -288,37 +303,60 @@ a i {
   padding: 0 20px;
 }
 
-.bloc {
-  padding: 10px;
-  overflow: hidden;
-  position: absolute;
-  left: -9999px;
-  top: 0;
-  transition: left 0.5s ease;
-  margin: 0 auto;
-  width: 100%;
-  right: 0;
+.carousel-item {
+  height: 100vh;
 }
-
-.bloc.active {
-  left: 0;
+.carousel-item p {
+  padding: 0 75px;
+  text-align: center;
+  margin-top: 70px;
+}
+.carousel-item video {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.carousel-item img {
+  height: 500px;
+  width: 300px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
-ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  font-size: 10rem;
+.carousel-indicators {
+  bottom: 70px;
 }
 
-li {
-  display: inline;
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #008e76;
+  background-color: transparent;
+  background-clip: inherit;
+  margin-right: 9px;
+  margin-left: 9px;
 }
 
-li.active {
-  border: black;
-  border-width: 2px;
+.carousel-indicators .active {
+  background-color: #008e76;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: initial;
+}
+
+.carousel-control-prev {
+  height: 162px;
+}
+
+.carousel-btn {
+  position: absolute;
+  bottom: 5px;
 }
 
 /***** END ONBOARDING *****/
@@ -638,7 +676,126 @@ footer {
 .modal-body p {
   font-weight: bold;
 }
+.modal-body h3 {
+  font-size: 10pt;
+  text-transform: uppercase;
+  color: #ff1744;
+  margin-top: 20px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+.form-row .form-group {
+  margin: 0;
+}
+
+#booking {
+  display: none;
+  padding: 20px 30px;
+}
+
+.qrcode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.qrcode img {
+  flex: 1;
+  margin-right: 20px;
+}
+.qrcode span {
+  flex: 1;
+  text-align: center;
+  font-size: 10pt;
+}
 
 /***** END MODAL *****/
+.cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+  font-size: 14px;
+  color: #1a1423;
+}
+
+.cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  top: -1px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #008e76;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.cbx span:last-child {
+  padding-left: 8px;
+}
+
+.cbx:hover span:first-child {
+  border-color: #008e76;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+  background: #008e76;
+  border-color: #008e76;
+  animation: wave 0.4s ease;
+}
+
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

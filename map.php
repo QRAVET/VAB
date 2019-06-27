@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <title>Carte</title>
-        <?php include 'include/header.php'; ?>
+        <?php include 'include/header.php';?>
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
         <link rel="stylesheet" href="css/loader.css">
@@ -50,7 +50,7 @@
             <div class="modal fade" id="trajetModal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-body">
+                        <div class="modal-body container-fluid">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="fas fa-times"></i>
                             </button>
@@ -58,32 +58,88 @@
                             <div class="form-group">
                                 <select class="input minimal">
                                     <option value="" disabled selected>Mon adresse</option>
+                                    <option value="Adresse n°1">Adresse n°1</option>
+                                    <option value="Adresse n°2">Adresse n°2</option>
+                                    <option value="Adresse n°3">Adresse n°3</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <select class="input minimal">
                                     <option value="" disabled selected>Ma destination</option>
+                                    <option value="Adresse n°1">Adresse n°1</option>
+                                    <option value="Adresse n°2">Adresse n°2</option>
+                                    <option value="Adresse n°3">Adresse n°3</option>
                                 </select>
                             </div>
-                            <div class="row form-group">
+                            <div class="flex-center form-row">
                                 <div class="col-8">Heure de départ</div>
-                                <div class="col-4"><input class="input" type="text" name="heure" placeholder="12:00"></div>
+                                <div class="col-4 form-group"><input class="input" type="text" name="heure" placeholder="12:00"></div>
                             </div>
-                            <div class="row confirm">
+                            <div class="confirm form-row">
                                 <div class="col-8">Départ dès que possible</div>
-                                <div class="col-4">
+                                <div class="col-4 flex-end">
                                     <label class="switch">
                                         <input type="checkbox">
                                         <span class="slider"></span>
                                     </label>
                                 </div>
                             </div>
-                            <div class="row form-group">
+                            <div class="flex-center form-row">
                                 <div class="col-8">Nombre de places</div>
-                                <div class="col-4"><input class="input" type="integer" name="place" placeholder="2 places"></div>
+                                <div class="col-4 form-group"><input class="input" type="integer" name="place" placeholder="2 places"></div>
                             </div>
                             <div class="align-mid">
-                                <button class="sm-text mr-auto mg-auto text-uppercase lg-btn bg-mgreen text-white" data-dismiss="modal">Enregistrer</button>
+                                <button id="book" class="sm-text mr-auto mg-auto text-uppercase lg-btn bg-mgreen text-white">Réserver</button>
+                            </div>
+                            <div id="booking">
+                                <div class="formule"><h2>Réservation prise en compte</h2></div>
+                                <div class="qrcode">
+                                    <img src="img/qr-code.svg" height="100px" width="100px">
+                                    <span>Merci de conserver ce QR code<br>il sera à présenter lors de l'embarquement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Parking -->
+            <div class="modal fade" id="parkingModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body container-fluid">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <p>Réserver un parking :</p>
+                            <h3>Parking la gardette</h3>
+                            <div class="flex-center form-row">
+                                <div class="col-8">Places disponibles :</div>
+                                <div class="col-4 form-group"><input class="input" type="text" name="place" placeholder="25 places"></div>
+                            </div>
+
+                            <h3>Arrivée</h3>
+                            <div class="flex-center form-row">
+                                <div class="col-8">Date :</div>
+                                <div class="col-4 form-group"><input class="input" type="text" name="arrivee_date" placeholder="01/05/30"></div>
+                            </div>
+                            <div class="flex-center form-row">
+                                <div class="col-8">Heure :</div>
+                                <div class="col-4 form-group"><input class="input" type="text" name="arrivee_heure" placeholder="12:00"></div>
+                            </div>
+
+                            <h3>Départ</h3>
+                            <div class="flex-center form-row">
+                                <div class="col-8">Date :</div>
+                                <div class="col-4 form-group"><input class="input" type="text" name="depart_date" placeholder="01/05/30"></div>
+                            </div>
+                            <div class="flex-center form-row">
+                                <div class="col-8">Heure :</div>
+                                <div class="col-4 form-group"><input class="input" type="text" name="depart_heure" placeholder="12:00"></div>
+                            </div>
+
+                            <div class="align-mid">
+                                <button class="sm-text mr-auto mg-auto text-uppercase lg-btn bg-mgreen text-white" data-dismiss="modal">Réserver</button>
                             </div>
                         </div>
                     </div>
@@ -111,6 +167,6 @@
 
         </div>
     </body>
-    <?php include 'include/script.php'; ?>
-    <script src="js/map.js"></script> 
+    <?php include 'include/script.php';?>
+    <script src="js/map.js"></script>
 </html>

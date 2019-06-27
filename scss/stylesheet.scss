@@ -63,6 +63,7 @@ a,
 a:hover,
 a:focus {
   text-decoration: none !important;
+  color: $dark-blue;
 }
 
 h1 {
@@ -97,6 +98,17 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /***** END CUSTOM *****/
@@ -225,19 +237,21 @@ button:focus {
 }
 
 textarea.input {
-    height: auto;
-    padding: 10px 5px;
+  height: auto;
+  padding: 10px 5px;
 }
 
-input, textarea, select {
-    outline: none;
-    border: none;
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
 }
 
-textarea:focus, input:focus {
-    border-color: transparent;
+textarea:focus,
+input:focus {
+  border-color: transparent;
 }
-
 
 /***** END INPUT *****/
 
@@ -293,37 +307,64 @@ a i {
   padding: 0 20px;
 }
 
-.bloc {
-  padding: 10px;
-  overflow: hidden;
+.carousel-item {
+  // background-color: #fdd835;
+  height: 100vh;
+
+  p {
+    padding: 0 75px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  video {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  img {
+    height: 500px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.carousel-indicators {
+  bottom: 70px;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border: 2px solid $dark-green;
+  background-color: transparent;
+  background-clip: inherit;
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+.carousel-indicators .active {
+  background-color: $dark-green;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: initial;
+}
+
+.carousel-control-prev {
+  height: 162px;
+}
+
+.carousel-btn {
   position: absolute;
-  left: -9999px;
-  top: 0;
-  transition: left 0.5s ease;
-  margin: 0 auto;
-  width: 100%;
-  right: 0;
-}
-
-.bloc.active {
-  left: 0;
-  display: block;
-}
-
-ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  font-size: 10rem;
-}
-
-li {
-  display: inline;
-}
-
-li.active {
-  border: black;
-  border-width: 2px;
+  bottom: 5px;
 }
 
 /***** END ONBOARDING *****/
@@ -671,6 +712,120 @@ footer {
   p {
     font-weight: bold;
   }
+
+  h3 {
+    font-size: 10pt;
+    text-transform: uppercase;
+    color: $med-pink;
+    margin-top: 20px;
+  }
+}
+
+.form-row {
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+.form-row .form-group {
+  margin: 0;
+}
+
+#booking {
+  display: none;
+  padding: 20px 30px;
+}
+
+.qrcode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  img {
+    flex: 1;
+    margin-right: 20px;
+  }
+  span {
+    flex: 1;
+    text-align: center;
+    font-size: 10pt;
+  }
 }
 
 /***** END MODAL *****/
+
+.cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+  font-size: 14px;
+  color: $dark-blue;
+}
+.cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  top: -1px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: $dark-green;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.cbx span:last-child {
+  padding-left: 8px;
+}
+.cbx:hover span:first-child {
+  border-color: $dark-green;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+  background: $dark-green;
+  border-color: $dark-green;
+  animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}

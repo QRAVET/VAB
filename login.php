@@ -37,7 +37,13 @@
                     </div>
                     <div class="col-12 form-flex">
                         <div>
-                            <input type="checkbox"><span class="sub-text">Se souvenir de moi</span>
+                            <input class="inp-cbx" id="cbx" type="checkbox" style="display: none;"/>
+                            <label class="cbx flex-center" for="cbx">
+                                <span>
+                                    <svg width="12px" height="10px" viewbox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
+                                </span>
+                                <span>Se souvenir de moi</span>
+                            </label>
                         </div>
                         <a class="sub-text" href="#">Mot de passe oublié ?</a>
                     </div>

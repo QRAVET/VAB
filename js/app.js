@@ -52,3 +52,8 @@ $('.footer__item').click(function() {
     $('.footer__item').removeClass("active");
     $(this).addClass("active");
 });
+
+$("#book").on("click", function() {
+    $("#booking").show();
+    $(this).hide();
+})
