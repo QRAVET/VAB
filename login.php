@@ -52,20 +52,19 @@
                 </div>
             </section>
         </div>
-
-       <?php include 'include/script.php';?>
-       <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3"></script>
-        <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                appId            : '2378009042262025',
-                autoLogAppEvents : true,
-                xfbml            : true,
-                version          : 'v3.3'
-                });
-            };
-        </script>
-        <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     </body>
+    <?php include 'include/script.php';?>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3"></script>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId            : '2378009042262025',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v3.3'
+            });
+        };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 </html>

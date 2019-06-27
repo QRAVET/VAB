@@ -31,7 +31,7 @@
                         <input type="checkbox"><span class="sub-text">Je souhaite m’abonner à la newsletter mensuelle.</span>
                     </div>
                     <div class="align-mid">
-                        <button type="submit" value="login" class="mr-auto mg-auto text-uppercase lg-btn bg-lgreen dblue">Inscription</button>
+                        <button type="submit" class="mr-auto mg-auto text-uppercase lg-btn bg-lgreen dblue">Inscription</button>
                     </div>
                 </form>
                 <div class="align-mid">
@@ -39,7 +39,6 @@
                 </div>
             </section>
         </div>
-
-        <?php include 'include/script.php';?>
     </body>
+    <?php include 'include/script.php';?>
 </html>
