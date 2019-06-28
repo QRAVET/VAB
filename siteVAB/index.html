@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Les transports VAB</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Overpass:400,700,900&display=swap" rel="stylesheet">
@@ -31,7 +33,7 @@
                     <a class="nav-link py-3 px-0 px-lg-3 js-scrollTo" href="#s5">application</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1 list-group-item">
-                    <a class="nav-link py-3 px-0 px-lg-3 js-scrollTo" href="#s6">contact</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 js-scrollTo" href="#s7">contact</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +50,7 @@
                     <a class="apple" href="https://apps.apple.com/fr/genre/ios/id36" target="_blank"><img
                             src="./img/pictos/apple.svg" alt="logo-apple"></a>
                 </div>
-                <a href="" target="_blank" class="text-uppercase"><u>accèder à l'application web</u></a>
+                <a href="demo" target="_blank" class="text-uppercase"><u>accèder à l'application web</u></a>
             </div>
             <div class="ancre d-flex justify-content-center">
                 <a href="#s2" class="js-scrollTo"><img class="ancre-bk bounce" src="./img/pictos/black-arrow-down.svg"
@@ -84,7 +86,7 @@
                         data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4"
                         data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1"
                         data-layer-2-force-limit="2" data-color1="#ff1744" data-color2="#00bfa5" data-color3="#5df2d6"
-                        href="#s3" data-width="370" data-height="60"></svg>
+                        href="#s3" data-width="450" data-height="80"></svg>
                     <!-- <button type="submit" class="btn lg-btn bg-mgreen white text-uppercase">en savoir plus sur vab</button> -->
                 </div>
                 <div class="col-6 blob__container">
@@ -157,7 +159,7 @@
             <div class="carousel-vab-bg bg-mgreen">
             </div>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                <div class="carousel-inner">
+                <div class="carousel-inner technique">
                     <div class="carousel-item active">
                         <div class="d-flex justify-content-between">
                             <p class="white">Si la voiture électrique ou hybride est de plus en plus répandue, les
@@ -313,24 +315,171 @@
     </section>
 
     <!-- SECTION 6  -->
-    <section>
+    <section id="s6">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 id="s6" class="text-uppercase">un projet qui rassemble</h2>
+                    <h2 class="text-uppercase">un projet qui rassemble</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators puces-partenaires">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item img-partenaires active">
+                                <img src="./img/pictos/forsee-power.jpg" class="d-block w-100" alt="logo-forsee-power">
+                                <p class="text-partenaires">Forsee Power est un groupe industriel français spécialiste
+                                    des systèmes de batteries
+                                    intelligentes pour les marchés du transport (routier, ferroviaire, maritime) et, des
+                                    équipements portables et mobiles (scooter, appareils médicaux, objets connectés,
+                                    robotique).</p>
+                            </div>
+                            <div class="carousel-item img-partenaires">
+                                <img src="./img/pictos/vinci.jpg" class="d-block w-100" alt="logo-vinci">
+                                <p class="text-partenaires">VINCI Immobilier, filiale du groupe VINCI, est un des
+                                    principaux acteurs de la promotion immobilière en France. Implanté sur tout le
+                                    territoire, VINCI Immobilier est présent sur les deux grands secteurs du marché :
+                                    l'immobilier résidentiel (logements et résidences gérées) et l'immobilier
+                                    d'entreprise (bureaux, hôtels, commerces)</p>
+                            </div>
+                            <div class="carousel-item img-partenaires">
+                                <img src="./img/pictos/bdx-metropole.jpg" class="d-block w-100"
+                                    alt="logo-bordeaux-metropole">
+                                <p class="text-partenaires">Bordeaux Métropole est un établissement public de
+                                    coopération intercommunale (EPCI) regroupant 28 communes de l'agglomération de
+                                    Bordeaux, réparties sur les deux rives de la Garonne. Elle a pris la suite, le 1er
+                                    janvier 2015, de la communauté urbaine de Bordeaux (CUB).</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3">
+                <div class="col">
                     <div class="blob3"></div>
                 </div>
-                <div class="col-3">
-                </div>
+                <form class="col-4 contact-pro">
+                    <p><b>Vous souhaitez prendre part à l’aventure VAB ?</b><br>
+                        Ou connaitre les solutions que nous pouvons vous apporter pour votre entreprise ?<br>
+                        <b>Contactez-nous</b> et vous recevrez la brochures des services VAB Pro.</p>
+                    <input type="email" placeholder="Adresse e-mail" id="send-pro">
+                    <svg class="liquid-button text-uppercase" data-width="390" data-height="80" data-text="envoyer"
+                        data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4"
+                        data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1"
+                        data-layer-2-force-limit="2" data-color1="#ff1744" data-color2="#00bfa5" data-color3="#5df2d6"
+                        href="#s2"></svg>
+                </form>
             </div>
         </div>
     </section>
+
+    <!-- SECTION 7  -->
+    <section id="s7" >
+        <div class="container contact">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-uppercase">contact</h2>
+                </div>
+            </div>
+            <div class="row social-mg">
+                <div class="col-5">
+                    <p>Suivez l’actualité du réseau VAB sur les réseaux sociaux de Bordeaux Métropole ainsi que TBM.</p>
+                    <div class="d-flex">
+                        <div class="social-buttons">
+                            <a href="#" class="social-buttons__button social-button social-button__lg social-button--instagram"
+                                aria-label="Instagram">
+                                <span class="social-button__inner">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="social-buttons">
+                            <a href="#" class="social-buttons__button social-button social-button__lg social-button--facebook"
+                                aria-label="Facebook">
+                                <span class="social-button__inner">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="social-buttons">
+                            <a href="#" class="social-buttons__button social-button social-button__lg social-button--twitter"
+                                aria-label="Twitter">
+                                <span class="social-button__inner">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 text-right">
+                    <h3>Téléchargez ci-dessous NOTRE brochure tarifaire 2030-2031.</h3>
+                    <svg class="liquid-button text-uppercase" data-width="390" data-height="80"
+                        data-text="téléchargement" data-force-factor="0.1" data-layer-1-viscosity="0.5"
+                        data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400" data-layer-2-mouse-force="500"
+                        data-layer-1-force-limit="1" data-layer-2-force-limit="2" data-color1="#00bfa5"
+                        data-color2="#ff1744" data-color3="#ff616f"></svg>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Souscrivez à notre newsletter pour ne manquer aucun évènements du réseau VAB</p>
+                </div>
+                <form class="col-4">
+                    <input type="email" placeholder="Adresse e-mail" id="send-contact">
+                    <svg class="liquid-button text-uppercase" href="./tarifs_VAB_2030.pdf" target="_blank"
+                        data-width="390" data-height="80" data-text="envoyer" data-force-factor="0.1"
+                        data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400"
+                        data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2"
+                        data-color1="#ff1744" data-color2="#00bfa5" data-color3="#5df2d6"></svg>
+                </form>
+            </div>
+        </div>
+        <div class="bg-mpink">
+            <div class="cta-vab align-middle container cta">
+                <a href="demo" target="_blank" class="text-uppercase"><u>accèder à l'application web</u></a>
+                <a class="google" href="https://play.google.com/store?hl=fr" target="_blank"><img
+                        src="./img/pictos/google.svg" alt="logo-google"></a>
+                <a class="apple" href="https://apps.apple.com/fr/genre/ios/id36" target="_blank"><img
+                        src="./img/pictos/apple.svg" alt="logo-apple"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dblue d-flex">
+        <div class="col-4">
+        </div>
+        <div class="col-4 text-center d-flex flex-center">
+            <p>© 2030 VAB Bordeaux Métropole - <a href="./mentions-legales.html"><u>Mentions légales</u></a></p>
+        </div>
+        <div class="col-4 d-flex flex-center">
+            <div class="social-buttons">
+                <a href="#" class="social-buttons__button social-button social-button--instagram"
+                    aria-label="Instagram">
+                    <span class="social-button__inner">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="social-buttons">
+                <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+                    <span class="social-button__inner">
+                        <i class="fab fa-facebook-f"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="social-buttons">
+                <a href="#" class="social-buttons__button social-button social-button--twitter" aria-label="Twitter">
+                    <span class="social-button__inner">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
 
     <a class="cd-top js-cd-top btn-top" href="#s1"></a>
 
@@ -342,10 +491,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- <script src="navbar.js"></script> -->
     <script src="liquid-button.js"></script>
     <script src="app.js"></script>
-    <script>$('body').scrollspy({target: ".navbar", offset: 120})</script>
+    <script>$('body').scrollspy({ target: ".navbar", offset: 120 })</script>
 </body>
 
 </html>

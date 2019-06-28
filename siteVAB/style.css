@@ -245,14 +245,13 @@ p {
 /***** CD TOP *****/
 
 .cd-top {
-
     z-index: 999;
     display: inline-block;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     position: fixed;
-    bottom: 40px;
+    bottom: 41px;
     right: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
@@ -303,9 +302,7 @@ header {
 .s1-bg {
     margin-top: 110px;
     background: url(./img/photos/plbourse.jpg) no-repeat center center fixed;
-    /* background-position: 0px -240px; */
     background-size: cover;
-    /* background-position: left top; */
 }
 
 .header__content {
@@ -610,15 +607,16 @@ embed {
     position: relative;
 }
 
-.carousel-item {
+.technique .carousel-item {
     padding: 0 100px;
     margin-top: -30px;
 }
 
-.carousel-item .d-flex>p {
+.technique .carousel-item .d-flex>p {
     flex: 30%;
 }
-.carousel-item .d-flex>div {
+
+.technique .carousel-item .d-flex>div {
     flex: 500px;
 }
 
@@ -669,7 +667,7 @@ embed {
     margin-left: -25px;
 }
 
-.carousel-item p {
+.technique p {
     margin-top: 145px;
 }
 
@@ -729,14 +727,14 @@ embed {
     display: block;
     position: absolute;
     width: 100%;
-    height: 800px;
+    height: 650px;
     overflow: hidden;
     border-radius: 2% 52% 68% 32% / 7% 28% 72% 58%;
     /* background: linear-gradient(to right, #23D5AB, #23A6D5, #E73C7E, #EE7752, #DDD6F3); */
     background-size: 500% 100%;
     animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
-    top: -110px;
-    right: -100px;
+    top: -25px;
+    /* right: -100px; */
 }
 
 .blob3:after {
@@ -822,8 +820,261 @@ embed {
     }
 }
 
+.text-partenaires {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.img-partenaires {
+    height: 600px;
+}
+
+.puces-partenaires li {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #ff1744;
+    margin: 0 10px;
+}
+
+.puces-partenaires li.active {
+    background-color: #ff1744;
+    border-color: #ff1744;
+}
+
+.puces-partenaires {
+    margin: auto;
+    top: 0;
+    width: 50%;
+    height: 10%;
+}
+
+.contact-pro {
+    padding: 0 35px;
+}
+
+.contact-pro p {
+    font-size: 28px;
+}
+
+input {
+    color: #9E9E9D;
+    background-color: #ECEDE2;
+    border-radius: 20px;
+    height: 75px;
+    width: 100%;
+    padding-left: 35px;
+    font-size: 25px;
+    border: none;
+}
+
 /***** FIN DE SECTION 6 *****/
 
 /***** SECTION 7 *****/
 
+h3 {
+    color: #ff1744;
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: end;
+}
+
+.contact p {
+    font-size: 28px;
+}
+
+footer {
+    height: 150px;
+}
+
+footer .flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer p a:hover {
+    color: #1a1423;
+    transition: 0.5s ease;
+}
+
 /***** FIN DE SECTION 7 *****/
+
+/***** BULLES SOCIALES *****/
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.social-buttons__button {
+    margin: 10px 5px 0;
+}
+
+.social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+}
+
+.social-button__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.social-button i, .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.social-button i {
+    font-size: 28px;
+}
+
+.social-button svg {
+    height: 40%;
+    width: 40%;
+}
+
+.social-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.social-button:focus, .social-button:hover {
+    color: #fff;
+}
+
+.social-button:focus::after, .social-button:hover::after {
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+}
+
+.social-button--mail {
+    color: #0072c6;
+}
+
+.social-button--mail::after {
+    background: #0072c6;
+}
+
+.social-button--facebook {
+    color: #3b5999;
+}
+
+.social-button--facebook::after {
+    background: #3b5999;
+}
+
+.social-button--linkedin {
+    color: #0077b5;
+}
+
+.social-button--linkedin::after {
+    background: #0077b5;
+}
+
+.social-button--github {
+    color: #6e5494;
+}
+
+.social-button--github::after {
+    background: #6e5494;
+}
+
+.social-button--codepen {
+    color: #212121;
+}
+
+.social-button--codepen::after {
+    background: #212121;
+}
+
+.social-button--steam {
+    color: #7da10e;
+}
+
+.social-button--steam::after {
+    background: #7da10e;
+}
+
+.social-button--snapchat {
+    color: #eec900;
+}
+
+.social-button--snapchat::after {
+    background: #eec900;
+}
+
+.social-button--twitter {
+    color: #55acee;
+}
+
+.social-button--twitter::after {
+    background: #55acee;
+}
+
+.social-button--instagram {
+    color: #e4405f;
+}
+
+.social-button--instagram::after {
+    background: #e4405f;
+}
+
+.social-button--npmjs {
+    color: #c12127;
+}
+
+.social-button--npmjs::after {
+    background: #c12127;
+}
+
+.social-button__lg {
+    height: 140px;
+    width: 140px;
+}
+
+.social-button__lg .fab {
+    font-size: 58px;
+}
+
+.social-mg {
+    margin-bottom: 40px;
+}
