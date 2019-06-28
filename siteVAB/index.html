@@ -17,31 +17,31 @@
 <body id="page-top">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg text-uppercase sticky-top" id="nav-VAB">
+    <nav class="navbar navbar-expand-lg text-uppercase" id="nav-VAB">
         <div class="container d-flex justify-content-between">
             <a class="logo-vab" href="#page-top"><img src="./img/pictos/logoVAB.svg" alt="logo-vab"></a>
             <ul class="navbar-nav ml-auto list-group">
                 <li class="nav-item mx-0 mx-lg-1 list-group-item active">
-                    <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#">Accueil</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 js-scrollTo" href="#s1">Accueil</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1 list-group-item">
-                    <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#s2">à propos de vab</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 js-scrollTo" href="#s2">à propos de vab</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1 list-group-item">
-                    <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#s5">application</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 js-scrollTo" href="#s5">application</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1 list-group-item">
-                    <a class="nav-link py-3 px-0 px-lg-3 js-scroll-trigger" href="#s6">contact</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 js-scrollTo" href="#s6">contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- SECTION 1  -->
-    <header class="container-fluid s1-bg">
-        <div class="container">
-            <h1>VAB une alternative rapide,<br>durable et écologique aux<br>transports individuels actuels</h1>
-            <div class="cta col-5">
+    <header id="s1" class="container-fluid s1-bg">
+        <div class="header__content">
+            <h1>une alternative rapide,<br>durable et écologique aux<br>transports individuels actuels</h1>
+            <div class="cta">
                 <div class="d-flex justify-content-between btn-cta">
                     <a class="google" href="https://play.google.com/store?hl=fr" target="_blank"><img
                             src="./img/pictos/google.svg" alt="logo-google"></a>
@@ -50,20 +50,23 @@
                 </div>
                 <a href="" target="_blank" class="text-uppercase"><u>accèder à l'application web</u></a>
             </div>
+            <div class="ancre d-flex justify-content-center">
+                <a href="#s2" class="js-scrollTo"><img class="ancre-bk bounce" src="./img/pictos/black-arrow-down.svg"
+                        alt="ancre noire"></a>
+            </div>
         </div>
-        <div class="ancre d-flex justify-content-center"><a href="#s1"><img class="ancre-bk"
-                    src="./img/pictos/black-arrow-down.svg" alt="ancre noire"></a></div>
     </header>
+
     <!-- SECTION 2  -->
-    <section>
+    <section id="s2">
         <div class="container">
-            <div class="row">
+            <div class="row" style="overflow-x: hidden;">
                 <div class="col-12">
-                    <h2 id="s2" class="text-uppercase">bordeaux métropole : le défi de 2030</h2>
+                    <h2 class="text-uppercase">bordeaux métropole : le défi de 2030</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6"><b></b>
+                <div class="col-6 main"><b></b>
                     <p>Ce n'est un secret pour personne, la Gironde et la métropole bordelaise ne cessent d'attirer de
                         nouveaux habitants. Une attractivité qui a des conséquences en matière de circulation
                         automobile.<br><br>
@@ -77,13 +80,14 @@
                         A partir du 1er mai 2030 les véhicules personnels cèsseront de circuler sur le territoire
                         métropolitain de Bordeaux et laisseront place à un nouveau mode de transport en commun
                         éco-responsable et durable.</p>
-                    <svg class="liquid-button text-uppercase" data-text="en savoir plus sur vab" data-force-factor="0.1"
-                        data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400"
-                        data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2"
-                        data-color1="#ff1744" data-color2="#00bfa5" data-color3="#5df2d6" href="#s2"></svg>
+                    <svg class="js-scrollTo liquid-button text-uppercase" data-text="en savoir plus sur vab"
+                        data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4"
+                        data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1"
+                        data-layer-2-force-limit="2" data-color1="#ff1744" data-color2="#00bfa5" data-color3="#5df2d6"
+                        href="#s3" data-width="370" data-height="60"></svg>
                     <!-- <button type="submit" class="btn lg-btn bg-mgreen white text-uppercase">en savoir plus sur vab</button> -->
                 </div>
-                <div class="col-6 main">
+                <div class="col-6 blob__container">
                     <div class="blob"></div>
                     <div class="blob2"></div>
                 </div>
@@ -93,11 +97,11 @@
     </section>
 
     <!-- SECTION 3  -->
-    <section>
+    <section id="s3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 id="s3" class="text-uppercase">vab, un atout au quotidien</h2>
+                    <h2 class="text-uppercase">vab, un atout au quotidien</h2>
                 </div>
             </div>
             <div class="row">
@@ -105,8 +109,9 @@
                     <embed src="https://www.youtube.com/embed/SSQDoWvPIX4?rel=0">
                     </embed>
                 </div>
-                <div class="col-6"><b></b>
-                    <p>Le véhicule autonome est une des clés du succès que nous promettons avec ce plan de
+                <div class="col-6">
+                    <p class="pd-left">Le véhicule autonome est une des clés du succès que nous promettons avec ce plan
+                        de
                         réappropriation de l’espace urbain.<br>
                         Des chercheurs montrent qu’en développant les voitures sans chauffeur et le nombre de passager
                         par véhicule, un embouteillage sur trois disparaîtrait et notre temps de trajet réduirait
@@ -121,7 +126,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>Le réseau TBM conserve ses lignes de tramway, et s’équipe de nouveaux Bus à Haut Niveau de
+                    <p class="pd-top">Le réseau TBM conserve ses lignes de tramway, et s’équipe de nouveaux Bus à Haut
+                        Niveau de
                         Service
                         (BHNS) qui sont certifiés zéro émissions de CO². Les vélos V3 et les trotinettes éléctriques
                         quant à
@@ -139,49 +145,94 @@
     </section>
 
     <!-- SECTION 4  -->
-    <section>
+    <section id="s4">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 id="s4" class="text-uppercase">qu'est-ce qui se cache sous un vab ?</h2>
+                    <h2 class="text-uppercase">qu'est-ce qui se cache sous un vab ?</h2>
                 </div>
             </div>
         </div>
         <div class="box-carousel">
             <div class="carousel-vab-bg bg-mgreen">
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="container d-flex justify-content-between">
-                            <p class="col-3 white">Si la voiture électrique ou hybride est de plus en plus répandue, les
+                        <div class="d-flex justify-content-between">
+                            <p class="white">Si la voiture électrique ou hybride est de plus en plus répandue, les
                                 bornes de
                                 rechargement manquent. Mais une nouvelle technologie permet de produire une
                                 importante source d’énergie à partir d’une simple lueur.
                             </p>
-                            <div class="col-4 mx-auto"><img class=" picto-carousel" src="./img/pictos/img-energie.svg"
+                            <div class="mx-auto"><img class=" picto-carousel" src="./img/pictos/img-energie.svg"
                                     alt="picto-energie"></div>
-                            <p class="col-3 white">VAB est doté d’un toit semi-transparent sur lequel parcourent au
+                            <p class="white">VAB est doté d’un toit semi-transparent sur lequel parcourent au
                                 total
                                 330 cellules
                                 photovoltaïques pour recharger la batterie grâce à l’énergie neo-solaire.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="container d-flex justify-content-between">
-                            <p class="col-3 white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, unde
-                                reprehenderit! Quis eveniet delectus, asperiores dolore velit soluta harum incidunt quae
-                                ipsa totam, perferendis itaque consequatur numquam explicabo eius quod?
+                        <div class="d-flex justify-content-between">
+                            <p class="white">Si la voiture électrique ou hybride est de plus en plus répandue, les
+                                bornes de
+                                rechargement manquent. Mais une nouvelle technologie permet de produire une
+                                importante source d’énergie à partir d’une simple lueur.
                             </p>
-                            <div class="col-4 mx-auto"><img class=" picto-carousel" src="./img/pictos/img-energie.svg"
+                            <div class="mx-auto"><img class=" picto-carousel" src="./img/pictos/img-energie.svg"
                                     alt="picto-energie"></div>
-                            <p class="col-3 white">VAB est doté d’un toit semi-transparent sur lequel parcourent au
+                            <p class="white">VAB est doté d’un toit semi-transparent sur lequel parcourent au
                                 total
                                 330 cellules
                                 photovoltaïques pour recharger la batterie grâce à l’énergie neo-solaire.</p>
                         </div>
                     </div>
-
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="white">Si la voiture électrique ou hybride est de plus en plus répandue, les
+                                bornes de
+                                rechargement manquent. Mais une nouvelle technologie permet de produire une
+                                importante source d’énergie à partir d’une simple lueur.
+                            </p>
+                            <div class="mx-auto"><img class=" picto-carousel" src="./img/pictos/img-energie.svg"
+                                    alt="picto-energie"></div>
+                            <p class="white">VAB est doté d’un toit semi-transparent sur lequel parcourent au
+                                total
+                                330 cellules
+                                photovoltaïques pour recharger la batterie grâce à l’énergie neo-solaire.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="white">Si la voiture électrique ou hybride est de plus en plus répandue, les
+                                bornes de
+                                rechargement manquent. Mais une nouvelle technologie permet de produire une
+                                importante source d’énergie à partir d’une simple lueur.
+                            </p>
+                            <div class="mx-auto"><img class=" picto-carousel" src="./img/pictos/img-energie.svg"
+                                    alt="picto-energie"></div>
+                            <p class="white">VAB est doté d’un toit semi-transparent sur lequel parcourent au
+                                total
+                                330 cellules
+                                photovoltaïques pour recharger la batterie grâce à l’énergie neo-solaire.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="white">Si la voiture électrique ou hybride est de plus en plus répandue, les
+                                bornes de
+                                rechargement manquent. Mais une nouvelle technologie permet de produire une
+                                importante source d’énergie à partir d’une simple lueur.
+                            </p>
+                            <div class="mx-auto"><img class=" picto-carousel" src="./img/pictos/img-energie.svg"
+                                    alt="picto-energie"></div>
+                            <p class="white">VAB est doté d’un toit semi-transparent sur lequel parcourent au
+                                total
+                                330 cellules
+                                photovoltaïques pour recharger la batterie grâce à l’énergie neo-solaire.</p>
+                        </div>
+                    </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
@@ -191,28 +242,43 @@
                     <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                     <span class="sr-only">Next</span>
                 </a>
+
+                <ol class="carousel-indicators d-flex justify-content-between">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        <div class="puce"></div>
+                        <p>energie<br>renouvellable</p>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <div class="puce"></div>
+                        <p>matériaux<br>recyclés</p>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                        <div class="puce"></div>
+                        <p>intelligence<br>artificielle</p>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                        <div class="puce"></div>
+                        <p>capteur<br>d'environnement</p>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4">
+                        <div class="puce"></div>
+                        <p>véhicule<br>connectable</p>
+                    </li>
+                    <div class="timeline"></div>
+                </ol>
             </div>
-            
-            <ol class="carousel-indicators d-flex justify-content-between">                
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><div class="puce"></div><p>energie<br>renouvellable</p></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"><div class="puce"></div><p>matériaux<br>recyclés</p></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"><div class="puce"></div><p>intelligence<br>artificielle</p></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"><div class="puce"></div><p>capteur<br>d'environnement</p></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"><div class="puce"></div><p>véhicule<br>connectable</p></li>
-                <div class="timeline"></div>
-            </ol>
         </div>
     </section>
 
     <!-- SECTION 5  -->
-    <section>
+    <section id="s5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 id="s5" class="text-uppercase">comment réserver mon vab ?</h2>
+                    <h2 class="text-uppercase">comment réserver mon vab ?</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mockup__container">
                 <div class="col">
                     <div class="mockup"><img class="mockup-1" src="./img/pictos/mockup-1.svg" alt="picto-energie"></div>
                     <p class="mgreen text-center s-title">Inscription en<br>quelques clics</p>
@@ -237,7 +303,7 @@
         </div>
         <div class="bg-mpink cta-wrapper">
             <div class="cta-vab align-middle container cta">
-                <a href="" target="_blank" class="text-uppercase"><u>accèder à l'application web</u></a>
+                <a href="demo" target="_blank" class="text-uppercase"><u>accèder à l'application web</u></a>
                 <a class="google" href="https://play.google.com/store?hl=fr" target="_blank"><img
                         src="./img/pictos/google.svg" alt="logo-google"></a>
                 <a class="apple" href="https://apps.apple.com/fr/genre/ios/id36" target="_blank"><img
@@ -266,19 +332,20 @@
         </div>
     </section>
 
+    <a class="cd-top js-cd-top btn-top" href="#s1"></a>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="navbar.js"></script>
+    <!-- <script src="navbar.js"></script> -->
     <script src="liquid-button.js"></script>
+    <script src="app.js"></script>
+    <script>$('body').scrollspy({target: ".navbar", offset: 120})</script>
 </body>
 
 </html>

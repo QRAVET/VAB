@@ -21,7 +21,9 @@
 
             <div class="logo-vab-md"></div>
 
-            <div class="fb-login-button" data-width="100%" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
+            <div class="fb">
+                <div class="fb-login-button" data-width="345px" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
+            </div>
 
             <div class="separator">ou</div>
 
@@ -65,10 +67,10 @@
     <script>
         window.fbAsyncInit = function() {
             FB.init({
-            appId            : '2378009042262025',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v3.3'
+                appId            : '2378009042262025',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v3.3'
             });
         };
     </script>

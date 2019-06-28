@@ -370,6 +370,12 @@ a i {
 /***** END ONBOARDING *****/
 
 /***** LOGIN *****/
+.fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 .separator {
   font-size: 14px;
