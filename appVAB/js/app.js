@@ -13,7 +13,7 @@ $("#formLogin").on("submit", function (e) {
             if (userJSON.id) {
                 window.location.href = "map"
             } else {
-                $("#msg").html("Erreur de connexion");
+                // $("#msg").html("Erreur de connexion");
                 $("input[type=password]").val("");
             }
         }
@@ -23,7 +23,7 @@ $("#formLogin").on("submit", function (e) {
 $('#formSignin').submit(function (e) {
     e.preventDefault();
     var formSerialize = $(this).serialize();
-    console.log("léotbo")
+    console.log("signin")
     $.ajax({
         type: "post",
         url: "functions/setUser.php",

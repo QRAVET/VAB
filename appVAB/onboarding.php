@@ -7,7 +7,7 @@
 
     <body>
         <div class="subheader bg-dgreen fixed-top">
-                <span>Orange</span>
+                <!-- <span>Orange</span> -->
         </div>
 
         <div id="onboarding" class="carousel slide" data-ride="carousel" data-interval="false">

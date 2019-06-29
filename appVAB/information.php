@@ -8,7 +8,7 @@
 <body>
     <div class="fixed-top">
         <div class="subheader bg-dpink">
-            <span>Orange</span>
+            <!-- <span>Orange</span> -->
         </div>
 
         <div class="row header bg-mpink">
@@ -90,7 +90,7 @@
                         <input class="input" type="text" name="code-postal" placeholder="Votre code postal">
                     </div>
                     <div class="col-12 form-group">
-                        <input class="input" type="text" name="pays" placeholder="Votre pays">
+                        <input class="input" type="text" name="ville" placeholder="Votre ville">
                     </div>
                     <div class="align-mid">
                         <button class="sm-text mr-auto mg-auto text-uppercase lg-btn bg-mgreen text-white" data-dismiss="modal">Valider</button>

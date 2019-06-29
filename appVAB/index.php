@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="subheader bg-dpink fixed-top">
-        <span>Orange</span>
+        <!-- <span>Orange</span> -->
     </div>
 
     <div class="container-fluid bg-dgreen screen">

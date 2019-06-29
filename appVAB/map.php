@@ -32,7 +32,7 @@
         <div id='map'>
             <div class="fixed-top">
                 <div class="subheader bg-dpink">
-                    <span>Orange</span>
+                    <!-- <span>Orange</span> -->
                 </div>
 
                 <div class="row header bg-mpink">
@@ -147,7 +147,7 @@
             </div>
 
             <footer>
-                <a href="favori" class="footer__item" >
+                <a href="favoris" class="footer__item" >
                     <i class="fas fa-star"></i>
                     <div class="footer__text">favoris</div>
                 </a>

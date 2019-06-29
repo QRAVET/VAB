@@ -8,7 +8,7 @@
 <body>
     <div class="fixed-top">
         <div class="subheader bg-dpink">
-            <span>Orange</span>
+            <!-- <span>Orange</span> -->
         </div>
 
         <div class="row header bg-mpink">
@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <!-- Modal Favori -->
+    <!-- Modal Favoris -->
     <div class="modal fade" id="favoriModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">

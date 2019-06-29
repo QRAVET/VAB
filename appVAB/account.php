@@ -8,7 +8,7 @@
 <body>
     <div class="fixed-top">
         <div class="subheader bg-dpink">
-            <span>Orange</span>
+            <!-- <span>Orange</span> -->
         </div>
 
         <div class="row header bg-mpink">
@@ -33,7 +33,7 @@
                 <h2 class="rubrique"><i class="fas fa-wallet"></i>Ma formule</h2>
                 <div class="arrow arrow--right"></div>
             </li>
-            <li onclick="location.href='favori'" class="line">
+            <li onclick="location.href='favoris'" class="line">
                 <h2 class="rubrique"><i class="fas fa-star"></i>Mes favoris</h2>
                 <div class="arrow arrow--right"></div>
             </li>

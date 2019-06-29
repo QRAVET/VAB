@@ -1,1 +1,1 @@
-sass --watch scss/stylesheet.scss:css/style.css scss/loader.scss:css/loader.css
+sass --watch appVAB/scss/stylesheet.scss:appVAB/css/style.css appVAB/scss/loader.scss:appVAB/css/loader.css

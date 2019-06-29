@@ -8,7 +8,7 @@
 <body>
     <div class="fixed-top">
         <div class="subheader bg-dpink">
-            <span>Orange</span>
+            <!-- <span>Orange</span> -->
         </div>
 
         <div class="row header bg-mpink">

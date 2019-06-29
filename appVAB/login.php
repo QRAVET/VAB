@@ -14,7 +14,7 @@
     <body>
 
         <div class="subheader bg-dgreen fixed-top">
-            <span>Orange</span>
+            <!-- <span>Orange</span> -->
         </div>
 
         <div class="container-fluid screen">
@@ -50,7 +50,7 @@
                         <a class="sub-text" href="#">Mot de passe oublié ?</a>
                     </div>
                     <div class="align-mid">
-                        <button type="submit" value="login" class="mr-auto mg-auto text-uppercase lg-btn bg-mgreen dblue text-white">Connexion</button>
+                        <button type="submit" value="login" class="mr-auto mg-auto text-uppercase lg-btn bg-mgreen dblue text-white" onclick="location.href='map'">Connexion</button>
                     </div>
                 </form>
 
