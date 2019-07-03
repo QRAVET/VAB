@@ -11,7 +11,7 @@ $("#formLogin").on("submit", function (e) {
         success: function (response) {
             userJSON = JSON.parse(response);
             if (userJSON.id) {
-                window.location.href = "map"
+                window.location.href = "account"
             } else {
                 // $("#msg").html("Erreur de connexion");
                 $("input[type=password]").val("");

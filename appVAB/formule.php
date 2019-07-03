@@ -41,9 +41,9 @@
         <div class="form-group">
             <select class="input minimal">
                 <option value="" disabled selected>Choisir une formule ...</option>
-                <option value="formule annuelle">Formule annuelle - soit 1€25 la journée</option>
-                <option value="formule mensuelle">Formule mensuelle - soit 1€45 la journée</option>
-                <option value="formule à la carte">Formule à la carte - soit 1€95 la journée</option>
+                <option value="formule VAB'o">Formule VAB'o - soit 4€40 la journée</option>
+                <option value="formule à la carte">Formule à la carte - soit 4€70 la journée</option>
+                <option value="formule VAB'PRO">Formule VAB'PRO - soit 3€20 la journée</option>
             </select>
         </div>
     </div>
